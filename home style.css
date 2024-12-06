@@ -1,0 +1,171 @@
+.links li a {
+    color:white; 
+   text-decoration:none;
+  font-size:24px;/* Set the text color to white */
+ /* Remove underline from links */
+}
+.links li a:hover{
+   text-decoration:underline;
+}
+/* This will make only the "Get Started" link text white */
+#getstarted a {
+    color: white;
+}
+.landing-page .container .links{
+  margin-right:60px;
+  margin-top:-20px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  BACKGROUND-COLOR:#151B54;
+  background-image:URL('https://media.istockphoto.com/id/1332097112/photo/the-black-and-silver-are-light-gray-with-white-the-gradient-is-the-surface-with-templates.jpg?s=612x612&w=0&k=20&c=3U9qpvN2znHbuJdkXiKHRLocNX01ng0AEtmmSyXlXec=');
+ background-repeat:no-repeat;
+  background-position:fixed;
+  background-size:cover;
+  background-radius:3px;
+  padding:50px;
+}
+a {
+  text-decoration: none;  
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+/* Start Landing Page */
+.landing-page header {
+  min-height: 80px;
+  display: flex;
+}
+
+  .landing-page header {
+    min-height: auto;
+    display: initial;
+  }
+
+.landing-page header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing-page header .logo {
+  color: #FFFF;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.landing-page header .links {
+  display: flex;
+  align-items: center;
+}
+
+.landing-page header .links li {
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.landing-page header .links li:last-child {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #0db8ec;
+}
+
+.landing-page .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  min-height: calc(100vh - 80px);
+}
+.landing-page .content .info h3{
+  font-family:ArialVerdana;
+  color:#0db8ec;
+  font-size: 44px;
+}
+.landing-page .content .info h1 {
+  color: #FFFF;
+  font-size: 44px;
+}
+.landing-page .content .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #FFFF;
+}
+.landing-page .content .info button {
+  font-family:arial,sans-serif;
+  border: 0;
+  border-radius: 20px;
+  padding: 12px;
+  margin-top: 30px;
+  cursor: pointer;
+  color:#ffff;
+  background-color:#0db8ec;
+}
+.landing-page .content .image img {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 300px;
+  height: auto;
+ border-radius:50%;
+ border-radius: 100px solid #ffff;
+ margin-left:100px;
+}
+/* End Landing Page */
+.footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+width:100%;
+position:fixed;
+ bottom:0;
+  left:0;
+
+}
+
+.footer .row{
+ 
+
+margin: 0%;
+padding: 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+font-size:15px;
+
+}
+.footer .row .text a{
+font-size:20px;
+
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
