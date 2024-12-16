@@ -116,6 +116,38 @@ ul {
   cursor: pointer;
   color:#ffff;
   background-color:#0db8ec;
+  position: relative;
+}
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.landing-page .content .info button::after, .landing-page .content .info button::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: conic-gradient(from var(--angle), transparent 30%, #ffffff);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 20px;
+  animation: 2s spin linear infinite;
+}
+.info button::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
 }
 .landing-page .content .image img {
   display: flex;
