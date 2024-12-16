@@ -128,7 +128,7 @@ ul {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: conic-gradient(from var(--angle), transparent 30%, #ffffff); /* Starts from variable '--angle' which has been set before at @property */
+  background: conic-gradient(from var(--angle), transparent 10%, #ffffff); /* Starts from variable '--angle' which has been set before at @property */
   top: 50%;
   left: 50%;
   translate: -50% -50%;
