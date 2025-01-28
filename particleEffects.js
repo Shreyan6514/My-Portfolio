@@ -97,7 +97,7 @@
             if (this.particles.length >= this.maxParticles) this.pool.push(this.particles.shift());
 
             particle = this.pool.length ? this.pool.pop() : new Particle();
-            particle.init(x, y, random(5, 40));
+            particle.init(x, y, random(3, 15));
 
             particle.wander = random(0.5, 2.0);
             particle.color = random(this.colors);
@@ -114,13 +114,21 @@
 
         onMouseMove(event) {
             const rect = this.canvas.getBoundingClientRect();
-            const x = event.clientX - rect.left;
-            const y = event.clientY - rect.top;
+            const x = event.clientX - rect.left; // Align x-coordinate to mouse
+            const y = event.clientY - rect.top;  // Align y-coordinate to mouse
 
-            for (let i = 0, n = random(1, 4); i < n; i++) {
-                this.spawn(x, y);
+            // Adjust for retina displays and alignment issues
+            const scaleX = this.canvas.width / rect.width;
+            const scaleY = this.canvas.height / rect.height;
+
+            const adjustedX = x * scaleX;
+            const adjustedY = y * scaleY;
+
+            for (let i = 0, n = random(2, 5); i < n; i++) {
+                this.spawn(adjustedX, adjustedY);
             }
         }
+        
 
         animate() {
             requestAnimationFrame(this.animate.bind(this));
