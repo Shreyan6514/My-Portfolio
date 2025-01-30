@@ -1,79 +1,147 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Particle Effects Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        particlesJS('particles-js', {
+          particles: {
+            number: {
+              value: 100,
+              density: {
+                enable: true,
+                value_area: 800
+              }
+            },
+            color: {
+              value: "#ffffff"
+            },
+            shape: {
+              type: "circle"
+            },
+            opacity: {
+              value: 0.5,
+              random: true
+            },
+            size: {
+              value: 3,
+              random: true
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: "none",
+              random: true,
+              straight: false,
+              out_mode: "out"
+            }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse"
+              }
+            }
+          },
+          retina_detect: true
+        });
+      });
+    </script>
   <meta charset="UTF-8">
   <title>My projects</title>
   <link rel="stylesheet" href="./work style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
 </head>
 <body>
-  <script src="particleEffects.js"></script>
-<!-- partial:index.partial.html -->
-<div class="landing-page">
-        <header>
-<div class="container1">
-    
-    <ul class="links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About  </a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-       
-</div>
-            
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="particles-js"></div> <!-- Particle Effect Container -->
+  <!-- Particle Container -->
+  <div class="particle-container"></div>
 
-<!--GOOGLE FONTS-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-        </header>
-  <body>
+  <!-- Your Existing Content -->
+  <div class="landing-page">
+    <header>
+      <div class="container1">
+        <ul class="links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
     <div class="body">
-    <h1>My Projects</h1>
-
+      <h1>My Projects</h1>
     </div>
-    </body>
-      
-           
- <section id="portfolio">
-   <h1>Project 1</h1>
-            <div class="project" id="project1"><a href="https://github.com/Shreyan6514/University-Website"><img src="Images/Uni_website.png"></a>
-              <p>
-                This university website, built with HTML and CSS, has a clean white background with a blue header to match with the University theme and a black footer. HTML structures the site into sections like navigation, main content, and footer. CSS adds modern typography and ensures a responsive design, making it professional and user-friendly.<p></div>
-  <h1>Project 2</h1>
-            <div  class="project" id="project2"><a href="https://github.com/Shreyan6514/My-Portfolio"><img src="Images/Portfolio.png" ></a><p>
-This webpage uses HTML for structure and CSS for style. HTML organizes the content into sections, and CSS adds a black gradient background with blue theme, making it modern and responsive. Perfect for showcasing IT projects and services.</p></div>
-<h1>Project 3</h1>
-            <div class="project" id="project3"><a href="https://github.com/Shreyan6514/My-Grocery-Project"> 
-              <img src="Images/My_grocery.png" alt="My_grocery" border="0"></a><p>
-This grocery shop app form, made in Visual Studio with C#, features:<br>
 
-  <b> Main Menu:</b> Green background, buttons for adding products, shopping, and exiting.<br>
+    <section id="portfolio">
+      <h1>Project 1</h1>
+      <div class="project" id="project1">
+        <a href="https://github.com/Shreyan6514/University-Website">
+          <img src="Images/Uni_website.png" alt="University Website">
+        </a>
+        <p>This university website, built with HTML and CSS, has a clean white background with a blue header to match with the University theme and a black footer. HTML structures the site into sections like navigation, main content, and footer. CSS adds modern typography and ensures a responsive design, making it professional and user-friendly.</p>
+      </div>
 
-  <b>Add Product Page:</b> Pink background, allows product detail entry.<br>
+      <h1>Project 2</h1>
+      <div class="project" id="project2">
+        <a href="https://github.com/Shreyan6514/My-Portfolio">
+          <img src="Images/Portfolio.png" alt="Portfolio">
+        </a>
+        <p>This webpage uses HTML for structure and CSS for style. HTML organizes the content into sections, and CSS adds a black gradient background with blue theme, making it modern and responsive. Perfect for showcasing IT projects and services.</p>
+      </div>
 
-<b>Shopping Page:</b> Yellow background, shows available products, a shopping basket, and checkout options.<br>
+      <h1>Project 3</h1>
+      <div class="project" id="project3">
+        <a href="https://github.com/Shreyan6514/My-Grocery-Project">
+          <img src="Images/My_grocery.png" alt="Grocery Project">
+        </a>
+        <p>This grocery shop app form, made in Visual Studio with C#, features:<br>
 
-C# powers the app's functionality, making it easy to manage the shop.</p></div>
-                    
-        </section>
-          <footer>
-          <div class="footer">
-          <div class="row">
-            <a href="https://github.com/Shreyan6514"><i class="fa fa-github"></i></a>
-            <a href="https://www.instagram.com/sszrejann/"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.facebook.com/Shreyan.eth"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.youtube.com/shorts/2FVuPt4QMG8"><i class="fa fa-youtube"></i></a>
-            <a href="https://x.com/TradeJigSaw"><i class="fa fa-twitter"></i></a>
-          </div>
-          
-          <div class="row">
-            <div class="text">
+          <b> Main Menu:</b> Green background, buttons for adding products, shopping, and exiting.<br>
+        
+          <b>Add Product Page:</b> Pink background, allows product detail entry.<br>
+        
+        <b>Shopping Page:</b> Yellow background, shows available products, a shopping basket, and checkout options.<br>
+        
+        C# powers the app's functionality, making it easy to manage the shop.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="https://github.com/Shreyan6514"><i class="fa fa-github"></i></a>
+          <a href="https://www.instagram.com/sszrejann/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/Shreyan.eth"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.youtube.com/shorts/2FVuPt4QMG8"><i class="fa fa-youtube"></i></a>
+          <a href="https://x.com/TradeJigSaw"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="row">
+          <div class="text">
             <a href="mailto:shreyan16@icloud.com">Contact Us: shreyan16@icloud.com</a>
-              </div>
           </div>
-          </footer>
-<!-- partial -->
-  
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Particle Effects JS -->
+  <script src="particleEffects.js"></script>
 </body>
 </html>

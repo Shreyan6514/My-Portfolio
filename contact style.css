@@ -35,7 +35,6 @@ ul {
   
 }
 
-
 /* Start Landing Page */
 .landing-page header {
   min-height: 80px;
@@ -187,3 +186,12 @@ font-size:2em;
 margin:0% 1%;
 }
 
+#particles-js {
+  position: absolute; /* Makes the particles layer above the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  z-index: -1; /* Makes sure particles stay behind the content */
+  pointer-events: fill; /* Ensures particles don't block interaction with other elements */
+}
